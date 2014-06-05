@@ -1,0 +1,55 @@
+#!/bin/bash
+
+function fce_tabulka {
+
+echo '
+<html>
+
+<head>
+
+   <meta http-equiv="Content-Type"content="text/html; charset=utf-8">
+   <meta http-equiv="content-Language" content="cs">
+
+   <title>Menu</title>
+
+   <style type="text/css">
+
+    H1{color: black; text-align: center;}
+    tr{height: 21pt;}
+    td{text-align: center}
+    a{font-size: 14pt; font-family: Arial; text-decoration: none; color: black;}
+    a:hover{color: yellow;}
+
+   </style>
+
+</head>
+
+   <BR>
+
+   <table width="100%" border="1" bgcolor="CornflowerBlue">
+
+    <tr><td><a href="system.html" target="obsah">Informace o systému</a>
+    <tr><td><a href="machine.html" target="obsah">Informace o počítači</a>
+    <tr><td><a href="block.html" target="obsah">Bloková zařízení</a>
+    <tr><td><a href="graphics.html" target="obsah">Grafická karta</a>
+    <tr><td><a href="sound.html" target="obsah">Zvuková karta</a>
+    <tr><td><a href="netcard.html" target="obsah">Síťová karta</a>
+    <tr><td><a href="cpu.html" target="obsah">CPU</a>
+    <tr><td><a href="bridge.html" target="obsah">Sběrnice</a>
+    <tr><td><a href="pci.html" target="obsah">PCI sběrnice</a>
+    <tr><td><a href="usb.html" target="obsah">USB zařízení</a>
+    <tr><td><a href="bluetooth.html" target="obsah">Bluetooth</a>
+    <tr><td><a href="keyboard.html" target="obsah">Klávesnice</a>
+    <tr><td><a href="mouse.html" target="obsah">Myš</a>
+    <tr><td><a href="memory.html" target="obsah">Využití paměti</a>
+    <tr><td><a href="df.html" target="obsah">Souborový systém</a>
+    <tr><td><a href="user.html" target="obsah">Přihlášení uživatelé</a>
+    <tr><td><a href="proces.html" target="obsah">Běžící procesy</a>
+    <tr><td><a href="program.html" target="obsah">Programové vybavení</a>
+    <tr><td><a href="others.html" target="obsah">Další informace</a>
+
+   </table>
+
+</html>'
+}
+fce_tabulka >tabulka.html
