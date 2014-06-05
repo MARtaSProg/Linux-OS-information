@@ -12,13 +12,24 @@ echo '
 
    <title>Zahlavi1</title>
 
+   <style type="text/css">
+
+	pre{color: black; font: Arial; color: #EDB169; font-weight: bold;}
+
+   </style>
+
 </head>
 
-<pre>'
+<body bgcolor="075D8C">
+   <img src="obr1.png" align="left" width="44" height="52">
+   <pre>'
+   
 date +"aktualizováno: %H:%M.%S"
 echo 'uživatelem:' `hostname`
 echo '
 </pre>
+
+</body>
 
 </html>'
 }
