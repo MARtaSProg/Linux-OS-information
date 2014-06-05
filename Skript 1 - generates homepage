@@ -1,0 +1,64 @@
+#!/bin/bash
+
+A=1
+echo Program neustále aktualizuje informace na webových stránkách
+echo Zastavte kombinací kláves CTRL + C
+
+	while [ "$A" -eq 1 ]
+	do
+
+		function fce_main {
+
+		echo '
+		<html>
+
+		<head>
+
+		   <meta http-equiv="Content-Type"content="text/html; charset=utf-8">
+		   <meta http-equiv="content-Language" content="cs">
+
+		   <title>HW/SW/Aktualni stav</title>
+
+		</head>
+
+		   <frameset rows="60,*" cols="300,*" frameborder="1" border="1" bordercolor="red">
+
+ 		  	<frame name="roh" src="zahlavi1.html" noresize>
+
+ 		  	<frame name="zahlavi" src="zahlavi2.html" noresize>
+
+		   	<frame name="menu" src="tabulka.html" noresize>
+
+		   	<frame name="obsah" src="system.html" noresize>
+
+		   </frameset>
+
+		</html>'
+		}
+		fce_main >index.html
+
+		. fce_cpu.sh
+		. fce_blok.sh
+		. fce_bluetooth.sh
+		. fce_bridge.sh
+		. fce_keyboard.sh
+		. fce_mouse.sh
+		. fce_netcard.sh
+		. fce_pci.sh
+		. fce_sound.sh
+		. fce_usb.sh
+		. fce_df.sh
+		. fce_proces.sh
+		. fce_user.sh
+		. fce_memory.sh
+		. fce_system.sh
+		. fce_machine.sh
+		. fce_graphics.sh
+		. fce_others.sh
+		. fce_zahl1.sh
+		. fce_zahl2.sh
+		. fce_tabulka.sh
+		. fce_program.sh
+
+		sleep 20
+	done
