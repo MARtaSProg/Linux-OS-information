@@ -1,0 +1,45 @@
+#!/bin/bash
+
+function fce_bridge {
+
+echo '
+<HTML>
+
+<HEAD>
+
+   <TITLE>Sběrnice</TITLE>
+   <meta http-equiv="Content-Type"content="text/html; charset=utf-8">
+   <meta http-equiv="content-Language" content="cs">
+
+   <style type="text/css">
+
+    pre{color: black; font: Arial; font-size: 12pt;}
+
+   </style>
+
+</HEAD>
+ 
+<BODY>
+
+   <BR>
+   <font color="black" face="Arial" size="5">
+   Sběrnice
+   </font>
+
+   <BR>
+   <BR>
+
+   <pre>'
+hwinfo --short --bridge
+echo '
+   </pre> 
+
+   <BR> 
+   <BR>
+   <BR>
+
+</BODY>
+
+</HTML>'
+}
+fce_bridge >bridge.html
