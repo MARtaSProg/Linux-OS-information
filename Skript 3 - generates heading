@@ -1,0 +1,24 @@
+#!/bin/bash
+
+function fce_zahl2 {
+
+echo '
+<html>
+
+<head>
+
+   <meta http-equiv="Content-Type"content="text/html; charset=utf-8">
+   <meta http-equiv="content-Language" content="cs">
+
+<title>Zahlavi1</title>
+
+</head>
+
+<pre align="center">
+<font size="5">Informace o hardware, software a aktuálním stavu počítače</font>
+Pro správnou funkci je třeba mít nainstalován program <b>HWinfo</b> a <b>Inxi</b>
+</pre>
+
+</html>'
+}
+fce_zahl2 >zahlavi2.html
