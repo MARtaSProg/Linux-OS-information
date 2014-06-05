@@ -1,0 +1,45 @@
+#!/bin/bash
+
+function fce_memory {
+
+echo '
+<HTML>
+
+<HEAD>
+
+   <TITLE>Využití paměti</TITLE>
+   <meta http-equiv="Content-Type"content="text/html; charset=utf-8">
+   <meta http-equiv="content-Language" content="cs">
+
+   <style type="text/css">
+
+    pre{color: black; font: Arial; font-size: 12pt;}
+
+   </style>
+
+</HEAD>
+ 
+<BODY>
+
+   <BR>
+   <font color="black" face="Arial" size="5">
+   Využití paměti
+   </font>
+
+   <BR>
+   <BR>
+
+   <pre>'
+free -h
+echo '
+   </pre> 
+
+   <BR> 
+   <BR>
+   <BR>
+
+</BODY>
+
+</HTML>'
+}
+fce_memory >memory.html
