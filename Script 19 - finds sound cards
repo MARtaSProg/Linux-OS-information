@@ -1,0 +1,45 @@
+#!/bin/bash
+
+function fce_sound {
+
+echo '
+<HTML>
+
+<HEAD>
+
+   <TITLE>Zvuková karta</TITLE>
+   <meta http-equiv="Content-Type"content="text/html; charset=utf-8">
+   <meta http-equiv="content-Language" content="cs">
+
+   <style type="text/css">
+
+    pre{color: black; font: Arial; font-size: 12pt;}
+
+   </style>
+
+</HEAD>
+ 
+<BODY>
+
+   <BR>
+   <font color="black" face="Arial" size="5">
+   Zvuková karta
+   </font>
+
+   <BR>
+   <BR>
+
+   <pre>'
+inxi -A -c 0
+echo '
+   </pre> 
+
+   <BR> 
+   <BR>
+   <BR>
+
+</BODY>
+
+</HTML>'
+}
+fce_sound >sound.html
