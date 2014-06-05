@@ -1,0 +1,45 @@
+#!/bin/bash
+
+function fce_program {
+
+echo '
+<HTML>
+
+<HEAD>
+
+   <TITLE>Programové vybavení</TITLE>
+   <meta http-equiv="Content-Type"content="text/html; charset=utf-8">
+   <meta http-equiv="content-Language" content="cs">
+
+   <style type="text/css">
+
+    pre{color: black; font: Arial; font-size: 12pt;}
+
+   </style>
+
+</HEAD>
+ 
+<BODY>
+
+   <BR>
+   <font color="black" face="Arial" size="5">
+   Programové vybavení
+   </font>
+
+   <BR>
+   <BR>
+
+   <pre>'
+rpm -qa
+echo '
+   </pre> 
+
+   <BR> 
+   <BR>
+   <BR>
+
+</BODY>
+
+</HTML>'
+}
+fce_program >program.html
