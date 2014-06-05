@@ -21,7 +21,7 @@ echo Zastavte kombinací kláves CTRL + C
 
 		</head>
 
-		   <frameset rows="60,*" cols="300,*" frameborder="1" border="1" bordercolor="red">
+		   <frameset rows="70,*" cols="300,*" frameborder="1" border="1" bordercolor="black">
 
  		  	<frame name="roh" src="zahlavi1.html" noresize>
 
