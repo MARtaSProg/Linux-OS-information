@@ -3,6 +3,7 @@
 function fce_tabulka {
 
 echo '
+
 <html>
 
 <head>
@@ -14,42 +15,101 @@ echo '
 
    <style type="text/css">
 
-    H1{color: black; text-align: center;}
-    tr{height: 21pt;}
-    td{text-align: center}
-    a{font-size: 14pt; font-family: Arial; text-decoration: none; color: black;}
-    a:hover{color: yellow;}
+	H1{color: black; text-align: center;}
+	tr{height: 18pt;}
+	td{text-align: center; border-style: outset;}
+	a{font-size: 14pt; font-family: Arial; text-decoration: none; color: #EDB169;}
+	a:hover{color: yellow;}
 
    </style>
 
 </head>
 
+<body bgcolor="3793C4">
+
    <BR>
 
-   <table width="100%" border="1" bgcolor="CornflowerBlue">
+   <table width="100%" border="1" bgcolor="075D8C">
 
-    <tr><td><a href="system.html" target="obsah">Informace o systému</a>
-    <tr><td><a href="machine.html" target="obsah">Informace o počítači</a>
-    <tr><td><a href="block.html" target="obsah">Bloková zařízení</a>
-    <tr><td><a href="graphics.html" target="obsah">Grafická karta</a>
-    <tr><td><a href="sound.html" target="obsah">Zvuková karta</a>
-    <tr><td><a href="netcard.html" target="obsah">Síťová karta</a>
-    <tr><td><a href="cpu.html" target="obsah">CPU</a>
-    <tr><td><a href="bridge.html" target="obsah">Sběrnice</a>
-    <tr><td><a href="pci.html" target="obsah">PCI sběrnice</a>
-    <tr><td><a href="usb.html" target="obsah">USB zařízení</a>
-    <tr><td><a href="bluetooth.html" target="obsah">Bluetooth</a>
-    <tr><td><a href="keyboard.html" target="obsah">Klávesnice</a>
-    <tr><td><a href="mouse.html" target="obsah">Myš</a>
-    <tr><td><a href="memory.html" target="obsah">Využití paměti</a>
-    <tr><td><a href="df.html" target="obsah">Souborový systém</a>
-    <tr><td><a href="user.html" target="obsah">Přihlášení uživatelé</a>
-    <tr><td><a href="proces.html" target="obsah">Běžící procesy</a>
-    <tr><td><a href="program.html" target="obsah">Programové vybavení</a>
-    <tr><td><a href="others.html" target="obsah">Další informace</a>
+   	<tr><td onmouseover="this.style.backgroundColor='red',document.getElementById('prvni').style.color='yellow'" onmouseout="this.style.backgroundColor='075D8C',document.getElementById('prvni').style.color='EDB169'" onclick="open('system.html', 'obsah', '')" style="cursor:hand">
+
+		<a id="prvni" href="system.html" target="obsah">Informace o systému</a>
+
+   	<tr><td onmouseover="this.style.backgroundColor='red',document.getElementById('druhy').style.color='yellow'" onmouseout="this.style.backgroundColor='075D8C',document.getElementById('druhy').style.color='EDB169'" onclick="open('machine.html', 'obsah', '')" style="cursor:hand">
+
+		<a id="druhy" href="machine.html" target="obsah">Informace o počítači</a>
+
+   	<tr><td onmouseover="this.style.backgroundColor='red',document.getElementById('treti').style.color='yellow'" onmouseout="this.style.backgroundColor='075D8C',document.getElementById('treti').style.color='EDB169'" onclick="open('block.html', 'obsah', '')" style="cursor:hand">
+
+		<a id="treti" href="block.html" target="obsah">Bloková zařízení</a>
+
+   	<tr><td onmouseover="this.style.backgroundColor='red',document.getElementById('ctvrty').style.color='yellow'" onmouseout="this.style.backgroundColor='075D8C',document.getElementById('ctvrty').style.color='EDB169'" onclick="open('graphics.html', 'obsah', '')" style="cursor:hand">
+
+		<a id="ctvrty" href="graphics.html" target="obsah">Grafická karta</a>
+
+   	<tr><td onmouseover="this.style.backgroundColor='red',document.getElementById('paty').style.color='yellow'" onmouseout="this.style.backgroundColor='075D8C',document.getElementById('paty').style.color='EDB169'" onclick="open('sound.html', 'obsah', '')" style="cursor:hand">
+
+		<a id="paty" href="sound.html" target="obsah">Zvuková karta</a>
+
+   	<tr><td onmouseover="this.style.backgroundColor='red',document.getElementById('sesty').style.color='yellow'" onmouseout="this.style.backgroundColor='075D8C',document.getElementById('sesty').style.color='EDB169'" onclick="open('netcard.html', 'obsah', '')" style="cursor:hand">
+
+		<a id="sesty" href="netcard.html" target="obsah">Síťová karta</a>
+
+   	<tr><td onmouseover="this.style.backgroundColor='red',document.getElementById('sedmy').style.color='yellow'" onmouseout="this.style.backgroundColor='075D8C',document.getElementById('sedmy').style.color='EDB169'" onclick="open('cpu.html', 'obsah', '')" style="cursor:hand">
+
+		<a id="sedmy" href="cpu.html" target="obsah">CPU</a>
+
+   	<tr><td onmouseover="this.style.backgroundColor='red',document.getElementById('osmy').style.color='yellow'" onmouseout="this.style.backgroundColor='075D8C',document.getElementById('osmy').style.color='EDB169'" onclick="open('bridge.html', 'obsah', '')" style="cursor:hand">
+
+		<a id="osmy" href="bridge.html" target="obsah">Sběrnice</a>
+
+   	<tr><td onmouseover="this.style.backgroundColor='red',document.getElementById('devaty').style.color='yellow'" onmouseout="this.style.backgroundColor='075D8C',document.getElementById('devaty').style.color='EDB169'" onclick="open('pci.html', 'obsah', '')" style="cursor:hand">
+
+		<a id="devaty" href="pci.html" target="obsah">PCI sběrnice</a>
+
+   	<tr><td onmouseover="this.style.backgroundColor='red',document.getElementById('desaty').style.color='yellow'" onmouseout="this.style.backgroundColor='075D8C',document.getElementById('desaty').style.color='EDB169'" onclick="open('usb.html', 'obsah', '')" style="cursor:hand">
+
+		<a id="desaty" href="usb.html" target="obsah">USB zařízení</a>
+
+   	<tr><td onmouseover="this.style.backgroundColor='red',document.getElementById('jedenacty').style.color='yellow'" onmouseout="this.style.backgroundColor='075D8C',document.getElementById('jedenacty').style.color='EDB169'" onclick="open('bluetooth.html', 'obsah', '')" style="cursor:hand">
+
+		<a id="jedenacty" href="bluetooth.html" target="obsah">Bluetooth</a>
+
+   	<tr><td onmouseover="this.style.backgroundColor='red',document.getElementById('dvanacty').style.color='yellow'" onmouseout="this.style.backgroundColor='075D8C',document.getElementById('dvanacty').style.color='EDB169'" onclick="open('keyboard.html', 'obsah', '')" style="cursor:hand">
+
+		<a id="dvanacty" href="keyboard.html" target="obsah">Klávesnice</a>
+
+   	<tr><td onmouseover="this.style.backgroundColor='red',document.getElementById('trinacty').style.color='yellow'" onmouseout="this.style.backgroundColor='075D8C',document.getElementById('trinacty').style.color='EDB169'" onclick="open('mouse.html', 'obsah', '')" style="cursor:hand">
+
+		<a id="trinacty" href="mouse.html" target="obsah">Myš</a>
+
+   	<tr><td onmouseover="this.style.backgroundColor='red',document.getElementById('ctrnacty').style.color='yellow'" onmouseout="this.style.backgroundColor='075D8C',document.getElementById('ctrnacty').style.color='EDB169'" onclick="open('memory.html', 'obsah', '')" style="cursor:hand">
+
+		<a id="ctrnacty" href="memory.html" target="obsah">Využití paměti</a>
+
+   	<tr><td onmouseover="this.style.backgroundColor='red',document.getElementById('patnacty').style.color='yellow'" onmouseout="this.style.backgroundColor='075D8C',document.getElementById('patnacty').style.color='EDB169'" onclick="open('df.html', 'obsah', '')" style="cursor:hand">
+
+		<a id="patnacty" href="df.html" target="obsah">Souborový systém</a>
+
+   	<tr><td onmouseover="this.style.backgroundColor='red',document.getElementById('sestnacty').style.color='yellow'" onmouseout="this.style.backgroundColor='075D8C',document.getElementById('sestnacty').style.color='EDB169'" onclick="open('user.html', 'obsah', '')" style="cursor:hand">
+
+		<a id="sestnacty" href="user.html" target="obsah">Přihlášení uživatelé</a>
+
+   	<tr><td onmouseover="this.style.backgroundColor='red',document.getElementById('sedmnacty').style.color='yellow'" onmouseout="this.style.backgroundColor='075D8C',document.getElementById('sedmnacty').style.color='EDB169'" onclick="open('proces.html', 'obsah', '')" style="cursor:hand">
+
+		<a id="sedmnacty" href="proces.html" target="obsah">Běžící procesy</a>
+
+	<tr><td onmouseover="this.style.backgroundColor='red',document.getElementById('osmnacty').style.color='yellow'" onmouseout="this.style.backgroundColor='075D8C',document.getElementById('osmnacty').style.color='EDB169'" onclick="open('program.html', 'obsah', '')" style="cursor:hand">
+
+		<a id="osmnacty" href="program.html" target="obsah">Programové vybavení</a>
+
+   	<tr><td onmouseover="this.style.backgroundColor='red',document.getElementById('devatenacty').style.color='yellow'" onmouseout="this.style.backgroundColor='075D8C',document.getElementById('devatenacty').style.color='EDB169'" onclick="open('others.html', 'obsah', '')" style="cursor:hand">
+
+		<a id="devatenacty" href="others.html" target="obsah">Další informace</a>
 
    </table>
 
+</body>
 </html>'
 }
 fce_tabulka >tabulka.html
