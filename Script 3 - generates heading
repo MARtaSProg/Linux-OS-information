@@ -14,10 +14,11 @@ echo '
 
 </head>
 
-<pre align="center">
-<font size="5">Informace o hardware, software a aktuálním stavu počítače</font>
-Pro správnou funkci je třeba mít nainstalován program <b>HWinfo</b> a <b>Inxi</b>
-</pre>
+<body bgcolor="ED9C3A">
+<pre>
+<font size="6"><CENTER>Informace o hardware, software a aktuálním stavu počítače</font>
+Pro správnou funkci je třeba mít nainstalován program <b>HWinfo</b> a <b>Inxi</CENTER></b></pre>
+</body>
 
 </html>'
 }
